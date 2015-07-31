@@ -1,0 +1,22 @@
+{% extends "auction/base.html" %}
+{% block title %}<center>Login</center>{% endblock %}
+{% block heading %}<center>Please "Login". If not a registered user, click "Register"</center>{% endblock %}
+{% block content %}
+	<center>
+	{% if form.errors %}
+		<p class = "error"><font color = "red">Sorry, invalid username or password</font></p>
+	{% endif %}
+
+	<form action = "" method = "POST">{% csrf_token %}
+		<table border = "0">
+			<tr><th><label for = "id_username">Username:</label></th><td>{{ form.username }}</td></tr>
+			<tr><th><label for = "id_password">Password:</label></th><td>{{ form.password }}</td></tr>
+		</table>
+		<input type = "submit" value = "Login" />
+		<input type = "hidden" name = "next" value = "bidding/" />
+	</form>
+
+	<hr>
+	Not yet registered? <a href = "register">Register</a>
+	</center>
+{% endblock %}

@@ -1,0 +1,77 @@
+body{
+	width: 94%;
+	text-align: center;
+	margin: 3%;
+}
+
+#main{background: #eee}
+
+#header{
+	height: 150px;
+	background: #aaa;
+}
+
+#logo{
+	height: 100;
+	width: 100px;
+    float: left;
+    margin-left: 120px;
+    margin-top: -10px;
+}
+
+#logoText{
+	float: left;
+	margin: 20px 0 0 130px;
+	font-family: 'American Typewriter', Courier, monospace;
+	font-size: 50px;
+	color: #333;
+}
+
+#widgetBar{
+	height: 50px;
+	width: 850px;
+	float: right;
+	background: #ccc;
+}
+
+.logoutWidget{
+	width: 200px;
+	margin: 12px 15px;
+	font-size: small;
+	float: right;
+	line-height: 25px;
+	background: #aaa;
+}
+
+#playerTeamInfo{
+	height: 160px;
+	width: 25%;
+	float: left;
+	background: #ccc;
+}
+
+#playerInfo{
+	height: 160px;
+	width: 35%;
+	float: left;
+	background: #eee;
+}
+
+#playerStats{
+	height: 160px;
+	width: 40%;
+	float: left;
+	background: #ddd;
+}
+
+#status{
+	height: 170px;
+	clear: left;
+	background: #aaa;
+}
+
+#bid{
+	height: 100px;
+	clear: left;
+	background: #bbb;
+}

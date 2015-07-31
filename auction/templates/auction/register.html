@@ -1,0 +1,14 @@
+{% extends "auction/base.html" %}
+{% block title %}<center>Register</center>{% endblock %}
+{% block heading %}<center>Register for this year's IPL bidding</center>{% endblock %}
+{% block content %}
+	<center>
+	<form action = "" method = "POST">{% csrf_token %}
+		<table border = "0">
+			{{ form.as_table }}
+		</table>
+		<input type = "submit" value = "Register" />
+	</form>
+	<p>Already registered? <a href = "/auction/">Login</a>
+	</center>
+{% endblock %}
